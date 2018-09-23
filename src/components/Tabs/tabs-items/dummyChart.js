@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const DummyChart = () => (
-    <div>DummyChart</div>
+    <div className="tab-content">DummyChart</div>
 );
 
 export default DummyChart

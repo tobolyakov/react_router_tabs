@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const DummyTable = () => (
-   <div>DummyTable</div>
+    <div className="tab-content">DummyTable</div>
 );
 
 export default DummyTable

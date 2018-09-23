@@ -29,8 +29,36 @@
 
 .g-container { max-width: 1200px; width: 100%; margin: 0 auto; }
 
-.tab-menu { display: flex;  }
+.tab {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
-.tab-menu .tab-item { list-style-type: none; cursor: pointer;  }
+.tab .tab-item {
+  background-color: inherit;
+  display: block;
+  padding: 14px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
 
-.tab-menu .tab-item:not(:last-child) { margin-right: 20px; }
+.tab .tab-item:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  padding: 20px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: left;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

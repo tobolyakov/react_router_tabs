@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const DummyList = () => (
-    <div>DummyList</div>
+    <div className="tab-content">DummyList</div>
 );
 
 export default DummyList
